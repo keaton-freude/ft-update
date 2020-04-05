@@ -12,7 +12,6 @@ rope = "*"
 requests = "*"
 pyboto3 = "*"
 boto3 = "*"
-cx-freeze = "*"
 pyinstaller = "*"
 
 [requires]

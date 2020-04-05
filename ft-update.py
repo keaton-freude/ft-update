@@ -228,6 +228,7 @@ def pre_work():
 
 
 def update_script():
+    sys.exit(0)
     # Pull all of the releases on FT-WEB repo, grab the latest release, compare its version
     # to our locally installed version, update if needed. If an update occurs, exit the script
     # with a specific error code so other processes know to rerun
@@ -364,7 +365,6 @@ if __name__ == "__main__":
                 sys.exit(-1)
         except OSError:
             print("Another process is already running!")
-            sys.exit(0)
         except:
             print("Error message: {}".format(sys.exc_info()[0]))
             traceback.print_exc()

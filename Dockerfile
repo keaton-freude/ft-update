@@ -3,11 +3,16 @@ WORKDIR /root
 
 ARG SSH_PRIVATE_KEY
 ARG SSH_PUBLIC_KEY
+ARG AWS_KEY
+ARG AWS_ACCESS
 
+ENV AWS_ACCESS_KEY_ID=$AWS_KEY
+ENV AWS_SECRET_ACCESS_KEY=$AWS_ACCESS
 
 # Apt-get
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get update -y && apt-get install -y --no-install-recommends rssh python python3 python3-pip python3-dev libz-dev build-essential apt-transport-https ca-certificates curl git wget && rm -rf /var/lib/apt/lists/*
+RUN pip3 install awscli --upgrade --user
 
 # SSH
 RUN mkdir -p /root/.ssh && chmod 0700 /root/.ssh && ssh-keyscan github.com > /root/.ssh/known_hosts
@@ -26,3 +31,5 @@ RUN python3 -m pip install pipenv
 
 # Repo
 RUN cd /root && git clone git@github.com:keaton-freude/ft-update.git
+
+

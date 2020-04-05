@@ -1,0 +1,5 @@
+{
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.pythonPath": "/home/keaton/.local/share/virtualenvs/ft-update-XDJ1SHA2/bin/python"
+}

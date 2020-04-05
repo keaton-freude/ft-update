@@ -1,0 +1,18 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+autopep8 = "*"
+rope = "*"
+
+[packages]
+requests = "*"
+pyboto3 = "*"
+boto3 = "*"
+cx-freeze = "*"
+
+[requires]
+python_version = "3.7.5"

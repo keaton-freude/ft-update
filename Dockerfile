@@ -5,9 +5,11 @@ ARG SSH_PRIVATE_KEY
 ARG SSH_PUBLIC_KEY
 ARG AWS_KEY
 ARG AWS_ACCESS
+ARG GH_API_KEY
 
 ENV AWS_ACCESS_KEY_ID=$AWS_KEY
 ENV AWS_SECRET_ACCESS_KEY=$AWS_ACCESS
+ENV GH_API_KEY=$GH_API_KEY
 
 # Apt-get
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections

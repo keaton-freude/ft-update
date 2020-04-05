@@ -10,3 +10,6 @@ echo "Running from $(pwd)"
 python3 -m pipenv install
 
 python3 -m pipenv run python3 -m PyInstaller --onefile ./ft-update.py
+
+# Upload the artifact to the latest tagged release
+./upload.sh github_api_token=$GH_API_TOKEN owner=darrenmsmith repo=FT-WEB tag=LATEST filename=./dist/ft-update

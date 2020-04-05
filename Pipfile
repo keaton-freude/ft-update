@@ -13,6 +13,7 @@ requests = "*"
 pyboto3 = "*"
 boto3 = "*"
 cx-freeze = "*"
+pyinstaller = "*"
 
 [requires]
-python_version = "3.7.5"
+python_version = "3.5"

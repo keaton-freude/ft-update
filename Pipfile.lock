@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dffb972c553904579a8a011164fded34ed02706f56ccb7a225fef67a5b1020ce"
+            "sha256": "ee4bb6499d85e3d4d4722f81b51bc7820b4d7b2fc98d21a876bf5f77798c64fe"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.7.5"
+            "python_version": "3.5"
         },
         "sources": [
             {
@@ -16,6 +16,13 @@
         ]
     },
     "default": {
+        "altgraph": {
+            "hashes": [
+                "sha256:1f05a47122542f97028caf78775a095fbe6a2699b5089de8477eb583167d69aa",
+                "sha256:c623e5f3408ca61d4016f23a681b9adb100802ca3e3da5e718915a9e4052cebe"
+            ],
+            "version": "==0.17"
+        },
         "boto3": {
             "hashes": [
                 "sha256:57397f9ad3e9afc17e6100a38c6e631b6545aabc7f8c38b86ff2c6f5931d0ebf",
@@ -88,6 +95,13 @@
             ],
             "index": "pypi",
             "version": "==1.4.4"
+        },
+        "pyinstaller": {
+            "hashes": [
+                "sha256:3730fa80d088f8bb7084d32480eb87cbb4ddb64123363763cf8f2a1378c1c4b7"
+            ],
+            "index": "pypi",
+            "version": "==3.6"
         },
         "python-dateutil": {
             "hashes": [

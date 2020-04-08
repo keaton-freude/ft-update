@@ -228,7 +228,6 @@ def pre_work():
 
 
 def update_script():
-    sys.exit(0)
     # Pull all of the releases on FT-WEB repo, grab the latest release, compare its version
     # to our locally installed version, update if needed. If an update occurs, exit the script
     # with a specific error code so other processes know to rerun
